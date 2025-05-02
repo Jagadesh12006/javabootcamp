@@ -1,1 +1,86 @@
+# IF - ELSE
 
+class hello{
+    public static void main(String args[]){
+        boolean rain = true;
+        if(rain)
+        {
+            System.out.println("Take an umbrella");
+        }
+        else{
+            System.out.println("Enjoy the sunlight");
+        }
+    }
+}
+------------------------------------------------------------------------------
+# IF - ELSE WITH COMPARISON OPERATOR
+
+class hello{
+    public static void main(String args[]){
+        int a = 22;
+        int b = 21;
+        if(a>b)
+        {
+            System.out.println("a is greater");
+        }
+        else{
+            System.out.println("b is greater");
+        }
+    }
+}
+-------------------------------------------------------------------------------
+# ELSE - IF WITH COMPARISON OPERATOR
+
+class hello{
+    public static void main(String args[]){
+        int a = 22;
+        int b = 21;
+        int c = 44;
+        if(a>b & a>c)
+        {
+            System.out.println("a is greater");
+        }
+        else if(b>a & b>c){
+            System.out.println("a is greater");
+        }
+        else{
+            System.out.println("c is greater");
+        }
+    }
+}
+--------------------------------------------------------------------------------
+# USING STRING EQUALS
+
+import java.util.Scanner;
+class hello{
+    public static void main(String args[]){
+       Scanner scan = new Scanner(System.in);
+       String a = scan.nextLine();
+       String b = scan.nextLine();
+       if(a.equals(b))
+       {
+        System.out.println("YES");
+       }
+       else{
+        System.out.println("NO");
+       }
+    }
+}
+----------------------------------------------------------------------------------
+# ODD OR EVEN
+
+import java.util.Scanner;
+class hello{
+    public static void main(String args[]){
+       Scanner scan = new Scanner(System.in);
+       int a = scan.nextInt();
+       if(a % 2 == 0)
+       {
+        System.out.println("EVEN");
+       }
+       else{
+        System.out.println("ODD");
+       }
+    }
+}
+-----------------------------------------------------------------------------------
