@@ -1,1 +1,61 @@
+# ELSE IF CONDITION
 
+import java.util.Scanner;
+class hello{
+    public static void main(String args[])
+    {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        if(a >= 35 && a < 60)
+        {
+            System.out.println("Video game");
+        }
+        else if(a >= 60 && a < 90)
+        {
+            System.out.println("Iphone");
+        }
+        else{
+            System.out.println("MacBook");
+        }
+}}
+-----------------------------------------------------------------------------------
+# NESTED IF CONDITION
+
+class hello{
+    public static void main(String args[])
+    {
+        boolean kfc = true;
+        boolean chicken = true;
+        if(kfc)
+        {
+            System.out.println("Enter into kfc");
+            if(chicken)
+            {
+                System.out.println("Eating chicken");
+            }
+        }
+}}
+-------------------------------------------------------------------------------------
+# TERNARY OPERATOR
+
+import java.util.Scanner;
+class hello{
+    public static void main(String args[])
+    {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        System.out.println(a>b || b>a? "a is greater":"b is greater");
+}}
+-------------------------------------------------------------------------------------
+# SIMPLE FOR LOOP PROGRAM
+
+class hello{
+    public static void main(String args[])
+    {
+        for(int i = 1; i <= 10; i++)
+        {
+            System.out.println(i);
+        }
+    }}
+--------------------------------------------------------------------------------------
