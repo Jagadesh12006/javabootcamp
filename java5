@@ -1,0 +1,141 @@
+# SIMPLE PROGRAM USING CLASS AND OBJECTS
+
+class hello{
+
+    int tea = 10;
+    int coffee = 15;
+    public static void main(String args[])
+    {
+        hello server1 = new hello();
+        System.out.println(server1.tea);
+
+        hello server2 = new hello();
+        System.out.println(server2.coffee);
+
+    }
+}
+------------------------------------------------------------------------------------
+# CLASSES AND OBJECTS USING USER INPUT
+
+class hello{
+
+    String name = "";
+    String proce = "";
+    int ram = 0;
+    int price = 0;
+    public static void main(String args[])
+    {
+        hello lap1 = new hello();
+        lap1.name = "HP";
+        lap1.proce = "reyzen 5";
+        lap1.ram = 8;
+        lap1.price = 70000;
+
+        hello lap2 = new hello();
+        lap2.name = "ASUS";
+        lap2.proce = "i5";
+        lap2.ram = 8;
+        lap2.price = 70000;
+        System.out.println(lap1.proce);
+        System.out.println(lap2.price);
+
+    }
+}
+-------------------------------------------------------------------------------------
+# SIMPLE PROGRAM USING FUNCTION
+
+class hello{
+    void iphone()
+    {
+        System.out.println("This is iphone");
+    }
+    void samsung()
+    {
+        System.out.println("This is samsung");
+    }
+    void oppo()
+    {
+        System.out.println("This is oppo");
+    }
+    void realme()
+    {
+        System.out.println("This is realme");
+    }
+
+    public static void main(String args[])
+    {
+        hello obj1 = new hello();
+        obj1.iphone();
+        obj1.samsung();
+        obj1.oppo();
+        obj1.realme();
+    }
+    
+}
+-----------------------------------------------------------------------------------------
+# SIMPLE PROGRAM USING FUNCTIONS
+
+class hello{
+    int apple_price = 20;
+    int apple_count = 5;
+
+    void total_money()
+    {
+        System.out.println(apple_price*apple_count);
+    }
+
+    public static void main(String args[])
+    {
+        hello obj1 = new hello();
+        obj1.total_money();
+    }
+}
+-----------------------------------------------------------------------------------------
+# SIMPLE ARITHMETIC OPERATIONS USING FUNCTIONS
+
+class hello{
+    void sum(int a, int b)
+    {
+        System.out.println(a+b);
+    }
+    void sub(int a,int b)
+    {
+        System.out.println(a-b);
+    }
+    void mul(int a,int b)
+    {
+        System.err.println(a*b);
+    }
+    void div(int a,int b)
+    {
+        System.out.println(a/b);
+    }
+
+    public staic void main(String args[])
+    {
+        hello obj1 = new hello();
+        obj1.sum(12,3);
+        obj1.sub(12,5);
+        obj1.mul(8,3);
+        obj1.div(12,6);
+    }
+
+}
+---------------------------------------------------------------------------------
+# USING RETURN KEYWORD 
+
+public class hello{
+    int sum(int a, int b)
+    {
+       int c = a + b;
+       return c;
+    }
+
+    public staic void main(String[] args)
+    {
+        hello obj1 = new hello();
+        int sum = obj1.sum(10,2);
+        System.out.println(sum);
+    }
+}
+----------------------------------------------------------------------------------
