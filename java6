@@ -1,1 +1,71 @@
+# INHERITANCE
 
+class Animal {
+    String name;
+    int age;
+
+    void makeSound() {
+        System.out.println("Animal make sound");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a1 = new Animal();
+        a1.makeSound();
+    }
+}
+-----------------------------------------------------------------------------------------------------------
+# INHERITANCE
+
+class Animal {
+    String name;
+    int age;
+
+    void makeSound() {
+        System.out.println("Animal make sound");
+    }
+}
+class Dog extends Animal{
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d1 = new Dog();
+        d1.makeSound();
+    }
+}
+-----------------------------------------------------------------------------------------------------------------
+# INHERITANCE
+
+class Animal {
+    String name;
+    int age;
+
+    void makeSound() {
+        System.out.println("Animal make sound");
+    }
+}
+class Dog extends Animal{
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+class Cat extends Dog {
+     void makeSound() {
+        System.out.println("Cat meow");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d1 = new Dog();
+        d1.makeSound();
+        Cat c1 = new Cat();
+        c1.makeSound();
+    }
+}
+-----------------------------------------------------------------------------------------------------------
