@@ -1,1 +1,140 @@
+# INTERFACE IN JAVA
 
+interface Playable {
+    void play();
+}
+class guitar implements Playable {
+    public void play(){
+        System.out.println("Play Guitar");
+    }
+}
+class piano implements Playable {
+    public void play() {
+        System.out.println("Play Piano");
+    }
+}
+public class Main {
+    public static void main(String[] args){
+       guitar g1 = new guitar();
+       g1.play();
+       piano p1 = new piano();
+       p1.play();
+    }
+}
+
+---------------------------------------------------------------------------------------------------
+# INTERFACE IN JAVA
+
+interface Readable {
+    void read();
+}
+interface Writeable {
+    void write();
+}
+interface Storable {
+    void store();
+}
+class action implements Readable,Writeable,Storable{
+    public void read(){
+        System.out.println("Read");
+    }
+    public void write(){
+        System.out.println("Write");
+    }
+    public void store(){
+        System.out.println("store");
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+       action a1 = new action();
+       a1.read();
+       a1.write();
+       a1.store();
+    }
+}
+
+---------------------------------------------------------------------------------------------------------
+# EXCEPTION HANDLING IN JAVA
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+       Scanner scan = new Scanner(System.in);
+       int a = scan.nextInt();
+       int b = scan.nextInt();
+       int c = 0;
+       try{
+       c = a/b;
+       }
+       catch(ArithmeticException e){
+           System.out.println("Arithmetic Exception, Please Retry!");
+       }
+       System.out.println("Final Result :"+a/b);
+    }
+}
+
+----------------------------------------------------------------------------------------------------------
+# FINALLY IN EXCEPTION HANDLING IN JAVA
+
+public class Main {
+    public static void main(String[] args){
+     try{
+       int a = 10/2;
+       }
+       catch(Exception e){
+           System.out.println(e);
+       }
+       finally{
+           System.out.println("Hello, World!");
+       }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+# THROW IN EXCEPTION HANDLING IN JAVA
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        try{
+            int age = scan.nextInt();
+            if(age <= 0){
+                throw new ArithmeticException("AGE IS INVALID");
+            }
+        }
+        catch(ArithmeticException e){
+            System.out.println(e);
+        }
+        System.out.println("Program Ended");
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------
+# EXCEPTION HANDLING IN JAVA
+
+import java.util.Scanner;
+class DivisionExample{
+    void divideNumber(int num, int den){
+        try{
+            int res = num/den;
+            System.out.println("Result ="+ res);
+        }
+        catch(ArithmeticException e){
+            System.out.println("Cannot divide by zero");
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n1 = scan.nextInt();
+        int n2 = scan.nextInt(); 
+        DivisionExample d1 = new DivisionExample();
+        d1.divideNumber(n1,n2);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------
